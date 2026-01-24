@@ -1,5 +1,5 @@
 // js/app.js
-// js/app.js
+
 document.addEventListener("DOMContentLoaded", () => {
   /* ======================
        DATOS DE CUMPLEAÑOS
@@ -7,16 +7,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const birthdays = {
     "01-24": [
       {
-        nombre: "Juan Pérez",
+        nombre: "Andres F. Nuñez Hernandez",
         sexo: "M",
         imagen:
-          "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+          "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
       },
       {
         nombre: "María Gómez",
         sexo: "F",
-        imagen:
-          "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face",
+        imagen: "",
       },
     ],
     "01-25": [
@@ -65,16 +64,12 @@ document.addEventListener("DOMContentLoaded", () => {
        FONDOS DE CUMPLEAÑOS (Imágenes temáticas)
     ======================*/
   const birthdayBackgrounds = [
-    "https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=800&q=80",
-    "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=800&q=80",
-    "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&q=80",
-    "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80",
-    "https://images.unsplash.com/photo-1545235617-9465d2a55698?w=800&q=80",
-    "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&q=80",
-    "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=800&q=80",
-    "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&q=80",
-    "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80",
-    "https://images.unsplash.com/photo-1545235617-9465d2a55698?w=800&q=80",
+    "imagenes/fondos/marco_1.png",    "imagenes/fondos/marco_2.png",    "imagenes/fondos/marco_3.jpg",    "imagenes/fondos/marco_4.png",
+    "imagenes/fondos/marco_5.jpg",    "imagenes/fondos/marco_6.jpg",    "imagenes/fondos/marco_7.jpg",    "imagenes/fondos/marco_8.png",
+    "imagenes/fondos/marco_9.png",    "imagenes/fondos/marco_10.jpg",    "imagenes/fondos/marco_11.jpg", "imagenes/fondos/marco_12.jpg",
+    "imagenes/fondos/marco_13.png", "imagenes/fondos/marco_14.png",  "imagenes/fondos/marco_15.png", "imagenes/fondos/marco_16.png", 
+    "imagenes/fondos/marco_17.jpg", "imagenes/fondos/marco_18.png",  "imagenes/fondos/marco_19.jpg", "imagenes/fondos/marco_20.png", 
+  
   ];
 
   /* ======================
@@ -134,55 +129,56 @@ document.addEventListener("DOMContentLoaded", () => {
        CITAS BÍBLICAS
     ======================*/
   const originalVerses = [
-    "Jehová cumplirá su propósito en ti. - Salmo 138:8",
-    "El Señor te bendiga y te guarde. - Números 6:24",
-    "El gozo del Señor es tu fortaleza. - Nehemías 8:10",
-    "Encomienda al Señor tu camino. - Salmo 37:5",
-    "Todo lo puedo en Cristo que me fortalece. - Filipenses 4:13",
-    "El Señor es mi pastor, nada me faltará. - Salmo 23:1",
-    "La misericordia del Señor es eterna. - Salmo 103:17",
-    "El Señor es mi luz y mi salvación. - Salmo 27:1",
-    "Confía en el Señor con todo tu corazón. - Proverbios 3:5",
-    "La paz de Dios guardará tu corazón. - Filipenses 4:7",
-    "El Señor es bueno con todos. - Salmo 145:9",
-    "Dios es nuestro amparo y fortaleza. - Salmo 46:1",
-    "El Señor cumple todas sus promesas. - Salmo 145:13",
-    "El amor del Señor es para siempre. - Salmo 136:1",
-    "Dios fortalece al cansado. - Isaías 40:29",
-    "El Señor te cuidará siempre. - Salmo 121:7",
-    "El Señor es fiel en todo. - Salmo 145:17",
-    "Dios tiene planes de bienestar. - Jeremías 29:11",
-    "El Señor es refugio seguro. - Proverbios 18:10",
-    "El Señor guía a los humildes. - Salmo 25:9",
-    "Dios es amor. - 1 Juan 4:8",
-    "El Señor sostiene al justo. - Salmo 37:17",
-    "El Señor es mi ayuda. - Salmo 54:4",
-    "Dios cuida de los suyos. - Salmo 33:18",
-    "El Señor es mi fortaleza. - Salmo 28:7",
-    "Dios nunca te dejará. - Hebreos 13:5",
-    "El Señor escucha tu clamor. - Salmo 34:17",
-    "Dios es tu protector. - Salmo 91:4",
-    "El Señor te da paz. - Juan 14:27",
-    "Dios renueva tus fuerzas. - Isaías 40:31",
-    "El Señor te acompaña siempre. - Mateo 28:20",
-    "Dios te bendice abundantemente. - Deuteronomio 28:2",
-    "El Señor es tu guía. - Salmo 32:8",
-    "Dios cuida tu camino. - Salmo 121:8",
-    "El Señor es fiel. - 2 Tesalonicenses 3:3",
-    "Dios te fortalece cada día. - Salmo 68:35",
-    "El Señor es bueno. - Salmo 100:5",
-    "Dios te concede paz. - Números 6:26",
-    "El Señor te sostiene. - Salmo 55:22",
-    "Dios es tu refugio. - Salmo 62:8",
-    "El Señor te ama. - Jeremías 31:3",
-    "Dios te guarda siempre. - Salmo 121:5",
-    "El Señor es misericordioso. - Salmo 103:8",
-    "Dios te bendice hoy. - Salmo 67:1",
-    "El Señor es tu esperanza. - Salmo 71:5",
-    "Dios te cuida con amor. - Salmo 91:1",
-    "El Señor es tu paz. - Efesios 2:14",
-    "Dios es fiel siempre. - Lamentaciones 3:23",
+    "Jehová cumplirá su propósito en ti, porque Su misericordia es para siempre y Su obra no abandona. - Salmo 138:8",
+    "El Señor te bendiga y te guarde, haciendo resplandecer Su rostro sobre ti y dándote paz en todo tiempo. - Números 6:24",
+    "El gozo del Señor es tu fortaleza, aun en medio de las pruebas, porque Él renueva tu espíritu cada día. - Nehemías 8:10",
+    "Encomienda al Señor tu camino, confía plenamente en Él y verás cómo actúa a tu favor. - Salmo 37:5",
+    "Todo lo puedo en Cristo que me fortalece, porque Su poder se perfecciona en mi debilidad. - Filipenses 4:13",
+    "El Señor es mi pastor, nada me faltará, porque Él me guía, me cuida y me da descanso para mi alma. - Salmo 23:1",
+    "La misericordia del Señor es eterna sobre los que le temen, y Su fidelidad permanece por generaciones. - Salmo 103:17",
+    "El Señor es mi luz y mi salvación, ¿de quién temeré?, Él es la fortaleza de mi vida. - Salmo 27:1",
+    "Confía en el Señor con todo tu corazón y no te apoyes en tu propia prudencia. - Proverbios 3:5",
+    "La paz de Dios, que sobrepasa todo entendimiento, guardará tu corazón y tus pensamientos en Cristo Jesús. - Filipenses 4:7",
+    "El Señor es bueno con todos, y Su misericordia se extiende sobre todas Sus obras. - Salmo 145:9",
+    "Dios es nuestro amparo y fortaleza, nuestro pronto auxilio en las tribulaciones. - Salmo 46:1",
+    "El Señor cumple todas Sus promesas y es fiel en todas Sus obras, porque Su palabra no falla. - Salmo 145:13",
+    "El amor del Señor es para siempre, y Su misericordia permanece de generación en generación. - Salmo 136:1",
+    "Dios fortalece al cansado y multiplica las fuerzas del que no tiene ningunas. - Isaías 40:29",
+    "El Señor te cuidará siempre, guardará tu alma y protegerá tu entrada y tu salida. - Salmo 121:7",
+    "El Señor es fiel en todo lo que hace y santo en todas Sus obras. - Salmo 145:17",
+    "Dios tiene planes de bienestar y no de mal, para darte un futuro lleno de esperanza. - Jeremías 29:11",
+    "El nombre del Señor es torre fuerte; a Él correrá el justo y será levantado. - Proverbios 18:10",
+    "El Señor guía a los humildes por el camino recto y les enseña Su voluntad. - Salmo 25:9",
+    "Dios es amor, y el que permanece en amor permanece en Dios, y Dios en él. - 1 Juan 4:8",
+    "El Señor sostiene al justo y no permitirá que su pie resbale. - Salmo 37:17",
+    "El Señor es mi ayuda y mi sustentador; en Él confía mi corazón. - Salmo 54:4",
+    "Dios cuida de los suyos y Su mirada está sobre los que esperan en Su misericordia. - Salmo 33:18",
+    "El Señor es mi fortaleza y mi escudo; en Él confía mi corazón y soy ayudado. - Salmo 28:7",
+    "Dios nunca te dejará ni te desamparará, porque Su fidelidad permanece para siempre. - Hebreos 13:5",
+    "El Señor escucha el clamor de los justos y los libra de todas sus angustias. - Salmo 34:17",
+    "Dios es tu protector y te cubrirá con Sus alas; debajo de ellas estarás seguro. - Salmo 91:4",
+    "El Señor te da paz, una paz que el mundo no puede dar y que guarda tu corazón. - Juan 14:27",
+    "Dios renueva tus fuerzas y te levanta como las águilas para que no desmayes. - Isaías 40:31",
+    "El Señor te acompaña siempre, hasta el fin del mundo, conforme a Su promesa. - Mateo 28:20",
+    "Dios te bendice abundantemente cuando obedeces Su voz y caminas en Sus caminos. - Deuteronomio 28:2",
+    "El Señor es tu guía y te enseñará el camino que debes andar. - Salmo 32:8",
+    "Dios cuida tu camino y guarda cada uno de tus pasos hoy y siempre. - Salmo 121:8",
+    "El Señor es fiel y te afirmará, guardándote del mal. - 2 Tesalonicenses 3:3",
+    "Dios te fortalece cada día con Su poder y Su gloria. - Salmo 68:35",
+    "El Señor es bueno y Su misericordia es eterna; Su verdad permanece para siempre. - Salmo 100:5",
+    "Dios te concede paz y hace resplandecer Su rostro sobre ti. - Números 6:26",
+    "El Señor te sostiene y nunca permitirá que el justo sea sacudido. - Salmo 55:22",
+    "Dios es tu refugio y fortaleza, en Él puedes confiar en todo tiempo. - Salmo 62:8",
+    "El Señor te ama con amor eterno y por eso te ha prolongado Su misericordia. - Jeremías 31:3",
+    "Dios te guarda siempre y es tu sombra a tu mano derecha. - Salmo 121:5",
+    "El Señor es misericordioso y clemente, lento para la ira y grande en misericordia. - Salmo 103:8",
+    "Dios te bendice hoy y hace resplandecer Su rostro sobre ti. - Salmo 67:1",
+    "El Señor es tu esperanza desde tu juventud y tu refugio seguro. - Salmo 71:5",
+    "Dios te cuida con amor y te guarda bajo Su abrigo. - Salmo 91:1",
+    "El Señor es tu paz y derribó todo muro que te separaba de Él. - Efesios 2:14",
+    "Dios es fiel siempre y Sus misericordias se renuevan cada mañana. - Lamentaciones 3:23"
   ];
+
 
   /* ======================
        SISTEMA DE PLANTILLAS
@@ -380,8 +376,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const container = document.getElementById("birthdayContainer");
   const today = todayKey();
 
-  console.log("Fecha de hoy:", today);
-  console.log("Cumpleaños para hoy:", birthdays[today]);
+  // console.log("Fecha de hoy:", today);
+  // console.log("Cumpleaños para hoy:", birthdays[today]);
 
   if (!birthdays[today] || birthdays[today].length === 0) {
     container.innerHTML = `
@@ -464,7 +460,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Manejar imagen
     imgElement.src =
       person.imagen ||
-      "https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?w=400&h=400&fit=crop";
+      "imagenes/fondos/predeterminado.jpg";
     imgElement.alt = `Foto de ${person.nombre}`;
     imgElement.onerror = function () {
       console.log("Error cargando imagen, usando fallback");
