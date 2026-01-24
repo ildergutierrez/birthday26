@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎂 Tarjetas de Cumpleaños Cristianas 🎂</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        /* Estilos adicionales para el header */
+        .header-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        
+        .current-date {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 10px 25px;
+            border-radius: 50px;
+            display: inline-block;
+            margin-top: 15px;
+            font-weight: 500;
+        }
+        
+        .info-badges {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        
+        .badge-gender {
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: 500;
+            color: white;
+        }
+        
+        .badge-male {
+            background: linear-gradient(135deg, #1565c0, #1a2980);
+        }
+        
+        .badge-female {
+            background: linear-gradient(135deg, #d81b60, #ff6b6b);
+        }
+        
+        .badge-unisex {
+            background: linear-gradient(135deg, #5e35b1, #6a11cb);
+        }
+        
+        /* Estilos para las animaciones */
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+<div class="container py-5">
+    <!-- ENCABEZADO ELEGANTE -->
+    <div class="header-card text-center">
+        <div class="mb-4">
+            <i class="bi bi-balloon-heart-fill" style="font-size: 3rem; color: #e91e63;"></i>
+        </div>
+        <h1 class="display-5 fw-bold mb-3">Feliz Cumpleaños</h1>
+        <p class="lead text-muted mb-4">Celebrando con bendiciones y amor cristiano</p>
+        
+        <div class="current-date">
+            <i class="bi bi-calendar-week me-2"></i>
+            <span id="currentDate"></span>
+        </div>
+        
+        <div class="info-badges">
+            <span class="badge-gender badge-male">
+                <i class="bi bi-gender-male me-1"></i> Masculino
+            </span>
+            <span class="badge-gender badge-female">
+                <i class="bi bi-gender-female me-1"></i> Femenino
+            </span>
+            <span class="badge-gender badge-unisex">
+                <i class="bi bi-gender-ambiguous me-1"></i> Unisex
+            </span>
+        </div>
+    </div>
+
+    <!-- CONTENEDOR DE TARJETAS -->
+    <div id="birthdayContainer" class="row justify-content-center"></div>
+
+    <!-- PIE DE PÁGINA -->
+    <div class="row mt-5">
+        <div class="col-12 text-center">
+            <div class="card border-0 bg-transparent">
+                <div class="card-body">
+                    <p class="text-muted mb-0">
+                        <i class="bi bi-heart-fill text-danger"></i> 
+                        Cada tarjeta incluye un mensaje único y una cita bíblica especial.
+                        <i class="bi bi-heart-fill text-danger"></i>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- PLANTILLAS OCULTAS (20 PLANTILLAS) -->
+<div class="d-none">
+    <!-- ============ PLANTILLAS MASCULINAS ============ -->
+    
+    <!-- PLANTILLA MASCULINA 1 - ELEGANTE AZUL -->
+    <div class="birthday-template male col-lg-6 col-md-8 col-sm-10">
+        <div class="birthday-wrapper">
+            <div class="birthday-export" style="border: 12px solid #f6b93b;">
+                <div class="birthday-header" style="height: 80px; background: rgba(0, 0, 0, 0.2);">
+                    <div class="serpentina" style="background: repeating-linear-gradient(45deg, #f6b93b, #f6b93b 10px, #0c2461 10px, #0c2461 20px);"></div>
+                    <div class="serpentina-text" style="font-size: 2.2rem; text-shadow: 3px 3px 6px rgba(0,0,0,0.5);">🎉 ¡FELICIDADES! 🎉</div>
+                </div>
+                
+                <div class="birthday-decoration deco-1" style="top: 20%; left: 8%; font-size: 32px;">👑</div>
+                <div class="birthday-decoration deco-2" style="top: 20%; right: 8%; font-size: 32px;">🎯</div>
+                <div class="birthday-decoration deco-3" style="bottom: 30%; left: 8%; font-size: 32px;">🏆</div>
+                <div class="birthday-decoration deco-4" style="bottom: 30%; right: 8%; font-size: 32px;">⚡</div>
+                
+                <div class="birthday-content" style="margin: 25px; background: rgba(255, 255, 255, 0.95); border-radius: 20px; border-left: none;">
+                    <h3 class="name" style="color: #0c2461; font-size: 2.4rem;"></h3>
+                    <div style="height: 3px; width: 100px; background: #f6b93b; margin: 20px auto;"></div>
+                    <p class="message" style="color: #2c3e50;"></p>
+                    <p class="verse" style="background: rgba(246, 185, 59, 0.15);"></p>
+                </div>
+                
+                <div class="birthday-image" style="height: 250px; margin: 0 25px 40px; background: rgba(255,255,255,0.1); position: relative;">
+                    <img class="birthday-img">
+                    <div class="image-date" ></div>
+                </div>
+            </div>
+            <button class="btn download" style="background: linear-gradient(135deg, #0c2461, #f6b93b);">
+                <i class="bi bi-download me-2"></i> Descargar Tarjeta
+            </button>
+        </div>
+    </div>
+
+    <!-- PLANTILLA MASCULINA 2 - VERDE NATURALEZA -->
+    <div class="birthday-template male col-lg-6 col-md-8 col-sm-10">
+        <div class="birthday-wrapper">
+            <div class="birthday-export" style="border: 8px solid #2e8b57;">
+                <div class="birthday-header" style="background: rgba(0, 0, 0, 0.15);">
+                    <div class="serpentina-text" style="color: white; font-family: 'Cursive', sans-serif; letter-spacing: 1px;">FELIZ CUMPLEAÑOS</div>
+                </div>
+                
+                <div class="birthday-image" style="height: 260px; margin: 25px; border-radius: 20px; overflow: hidden; border: 5px solid white; box-shadow: 0 10px 25px rgba(0,0,0,0.2); position: relative;">
+                    <img class="birthday-img">
+                    <div class="image-date" ></div>
+                </div>
+                
+                <div class="birthday-content" style="margin: 0 25px 25px; background: white; border-radius: 20px; padding: 30px; position: relative;">
+                    <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: #2e8b57; color: white; padding: 8px 30px; border-radius: 20px; font-weight: bold;">CELEBRA CON ALEGRÍA</div>
+                    <h3 class="name" style="color: #1d976c; margin-top: 20px;"></h3>
+                    <div style="display: flex; justify-content: center; gap: 10px; margin: 15px 0;">
+                        <span style="font-size: 24px;">🌿</span>
+                        <span style="font-size: 24px;">🍃</span>
+                        <span style="font-size: 24px;">🌱</span>
+                    </div>
+                    <p class="message" style="color: #2c3e50;"></p>
+                    <p class="verse" style="border-left: 4px solid #1d976c; background: rgba(29, 151, 108, 0.05);"></p>
+                </div>
+            </div>
+            <button class="btn download" style="background: linear-gradient(135deg, #1d976c, #2e8b57);">
+                <i class="bi bi-download me-2"></i> Descargar Tarjeta
+            </button>
+        </div>
+    </div>
+
+    <!-- PLANTILLA MASCULINA 3 - NEGRO Y ORO -->
+    <div class="birthday-template male col-lg-6 col-md-8 col-sm-10">
+        <div class="birthday-wrapper">
+            <div class="birthday-export" style="border: 10px solid #ffd700;">
+                <div class="birthday-header" style="background: linear-gradient(90deg, #ffd700, #ffed4e, #ffd700);">
+                    <div class="serpentina-text" style="color: #0f0c29; font-weight: 800; text-shadow: 2px 2px 4px rgba(255,215,0,0.3);">¡FELIZ CUMPLEAÑOS!</div>
+                </div>
+                
+                <div class="birthday-content" style="margin: 30px 30px 20px; background: rgba(255, 255, 255, 0.95); border-radius: 15px; position: relative; overflow: hidden;">
+                    <div style="position: absolute; top: 0; left: 0; right: 0; height: 5px; background: linear-gradient(90deg, #ffd700, #302b63, #ffd700);"></div>
+                    <h3 class="name" style="color: #0f0c29; margin-top: 15px;"></h3>
+                    <p class="message" style="color: #2c3e50;"></p>
+                    <p class="verse" style="background: rgba(255, 215, 0, 0.1); border-left: 4px solid #ffd700;"></p>
+                </div>
+                
+                <div class="birthday-image" style="height: 240px; margin: 0 30px 30px; border: 3px solid #ffd700; border-radius: 10px; position: relative;">
+                    <img class="birthday-img">
+                    <div class="image-date" ></div>
+                </div>
+                
+                <div style="text-align: center; margin-bottom: 20px;">
+                    <span style="font-size: 28px; margin: 0 10px;">👑</span>
+                    <span style="font-size: 28px; margin: 0 10px;">💎</span>
+                    <span style="font-size: 28px; margin: 0 10px;">⭐</span>
+                </div>
+            </div>
+            <button class="btn download" style="background: linear-gradient(135deg, #0f0c29, #ffd700); color: #0f0c29;">
+                <i class="bi bi-download me-2"></i> Descargar Tarjeta
+            </button>
+        </div>
+    </div>
+
+    <!-- PLANTILLA MASCULINA 4 - AZUL MARINO -->
+    <div class="birthday-template male col-lg-6 col-md-8 col-sm-10">
+        <div class="birthday-wrapper">
+            <div class="birthday-export" style="border: 8px solid #00b4db;">
+                <div class="birthday-image" style="height: 280px; margin: 30px 30px 10px; border-radius: 15px; overflow: hidden; position: relative;">
+                    <img class="birthday-img">
+                    <div class="image-date" ></div>
+                </div>
+                
+                <div class="birthday-content" style="margin: 0 30px 30px; background: white; border-radius: 20px; padding: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                    <div style="text-align: center; margin-bottom: 15px;">
+                        <span style="font-size: 32px; color: #00b4db;">🎂</span>
+                    </div>
+                    <h3 class="name" style="color: #1a2980;"></h3>
+                    <div style="width: 80px; height: 2px; background: #26d0ce; margin: 15px auto;"></div>
+                    <p class="message" style="color: #34495e;"></p>
+                    <p class="verse" style="margin-top: 20px; padding: 15px; background: rgba(38, 208, 206, 0.1); border-radius: 10px;"></p>
+                </div>
+                
+                <div class="birthday-header" style="background: rgba(0, 180, 219, 0.1); height: 50px;">
+                    <div class="serpentina-text" style="font-size: 1.4rem; color: white;">¡QUE DIOS TE BENDIGA!</div>
+                </div>
+            </div>
+            <button class="btn download" style="background: linear-gradient(135deg, #00b4db, #1a2980);">
+                <i class="bi bi-download me-2"></i> Descargar Tarjeta
+            </button>
+        </div>
+    </div>
+
+    <!-- PLANTILLA MASCULINA 5 - GRIS ELEGANTE -->
+    <div class="birthday-template male col-lg-6 col-md-8 col-sm-10">
+        <div class="birthday-wrapper">
+            <div class="birthday-export" style="border: 10px solid #ecf0f1;">
+                <div class="birthday-content" style="margin: 35px; background: white; border-radius: 10px; padding: 30px; position: relative;">
+                    <div style="position: absolute; top: -25px; left: 0; right: 0; text-align: center;">
+                        <span style="background: #2c3e50; color: white; padding: 10px 40px; border-radius: 25px; font-weight: bold; font-size: 1.2rem;">FELIZ CUMPLEAÑOS</span>
+                    </div>
+                    <h3 class="name" style="color: #2c3e50; margin-top: 20px;"></h3>
+                    <div style="text-align: center; margin: 20px 0;">
+                        <span style="display: inline-block; width: 40px; height: 40px; background: #4a6491; color: white; border-radius: 50%; line-height: 40px; margin: 0 5px;">🎯</span>
+                        <span style="display: inline-block; width: 40px; height: 40px; background: #2c3e50; color: white; border-radius: 50%; line-height: 40px; margin: 0 5px;">🎳</span>
+                        <span style="display: inline-block; width: 40px; height: 40px; background: #4a6491; color: white; border-radius: 50%; line-height: 40px; margin: 0 5px;">🏆</span>
+                    </div>
+                    <p class="message" style="color: #34495e;"></p>
+                    <p class="verse" style="background: #f8f9fa; border-left: 4px solid #4a6491;"></p>
+                </div>
+                
+                <div class="birthday-image" style="height: 220px; margin: 0 35px 35px; border-radius: 10px; overflow: hidden; position: relative;">
+                    <img class="birthday-img">
+                    <div class="image-date" ></div>
+                </div>
+            </div>
+            <button class="btn download" style="background: linear-gradient(135deg, #2c3e50, #95a5a6);">
+                <i class="bi bi-download me-2"></i> Descargar Tarjeta
+            </button>
+        </div>
+    </div>
+
+    <!-- PLANTILLA MASCULINA 6 - ROJO PASIONAL -->
+    <div class="birthday-template male col-lg-6 col-md-8 col-sm-10">
+        <div class="birthday-wrapper">
+            <div class="birthday-export" style="border: 8px solid #f1c40f;">
+                <div class="birthday-header" style="background: rgba(0, 0, 0, 0.2);">
+                    <div class="serpentina-text" style="color: #f1c40f; font-weight: 800; letter-spacing: 2px;">¡CELEBRA CON NOSOTROS!</div>
+                </div>
+                
+                <div class="birthday-image" style="height: 250px; margin: 25px; border: 4px solid #f1c40f; border-radius: 15px; position: relative;">
+                    <img class="birthday-img">
+                    <div class="image-date" ></div>
+                </div>
+                
+                <div class="birthday-content" style="margin: 0 25px 25px; background: rgba(255, 255, 255, 0.95); border-radius: 15px; padding: 25px;">
+                    <h3 class="name" style="color: #c0392b;"></h3>
+                    <div style="display: flex; justify-content: center; margin: 15px 0;">
+                        <div style="flex: 1; height: 2px; background: #f1c40f; margin: auto 10px;"></div>
+                        <span style="font-size: 24px;">🔥</span>
+                        <div style="flex: 1; height: 2px; background: #f1c40f; margin: auto 10px;"></div>
+                    </div>
+                    <p class="message" style="color: #2c3e50;"></p>
+                    <p class="verse" style="background: rgba(241, 196, 15, 0.2); border-left: 3px solid #f1c40f;"></p>
+                </div>
+                
+                <div style="text-align: center; padding-bottom: 20px;">
+                    <span style="font-size: 24px; margin: 0 8px; color: #f1c40f;">⚡</span>
+                    <span style="font-size: 24px; margin: 0 8px; color: #f1c40f;">🎭</span>
+                    <span style="font-size: 24px; margin: 0 8px; color: #f1c40f;">🎸</span>
+                </div>
+            </div>
+            <button class="btn download" style="background: linear-gradient(135deg, #c0392b, #f1c40f); color: #c0392b;">
+                <i class="bi bi-download me-2"></i> Descargar Tarjeta
+            </button>
+        </div>
+    </div>
+
+    <!-- PLANTILLA MASCULINA 7 - PÚRPURA REAL -->
+    <div class="birthday-template male col-lg-6 col-md-8 col-sm-10">
+        <div class="birthday-wrapper">
+            <div class="birthday-export" style="border: 12px solid #ff9a00;">
+                <div class="birthday-content" style="margin: 30px; background: rgba(255, 255, 255, 0.98); border-radius: 20px; padding: 30px; box-shadow: 0 15px 35px rgba(0,0,0,0.1);">
+                    <div style="text-align: center; margin-bottom: 20px;">
+                        <div style="display: inline-block; padding: 10px 25px; background: linear-gradient(135deg, #6a11cb, #2575fc); color: white; border-radius: 30px; font-weight: bold;">FELIZ CUMPLEAÑOS</div>
+                    </div>
+                    <h3 class="name" style="color: #6a11cb;"></h3>
+                    <p class="message" style="color: #34495e; line-height: 1.8;"></p>
+                    <div style="border-top: 2px dashed #ff9a00; margin: 25px 0;"></div>
+                    <p class="verse" style="color: #2575fc; font-weight: 500;"></p>
+                </div>
+                
+                <div class="birthday-image" style="height: 230px; margin: 0 30px 30px; border-radius: 15px; overflow: hidden; position: relative; border: 5px solid #ff9a00;">
+                    <img class="birthday-img">
+                    <div class="image-date" ></div>
+                </div>
+            </div>
+            <button class="btn download" style="background: linear-gradient(135deg, #6a11cb, #ff9a00);">
+                <i class="bi bi-download me-2"></i> Descargar Tarjeta
+            </button>
+        </div>
+    </div>
+
+    <!-- PLANTILLA MASCULINA 8 - TURQUESA MODERNO -->
+    <div class="birthday-template male col-lg-6 col-md-8 col-sm-10">
+        <div class="birthday-wrapper">
+            <div class="birthday-export" style="border: 8px solid #f8f9fa;">
+                <div class="birthday-header" style="background: linear-gradient(90deg, #f8f9fa, #00b4db, #f8f9fa); height: 60px;">
+                    <div class="serpentina-text" style="color: #0083b0; font-weight: bold; font-size: 1.8rem;">¡FELIZ DÍA!</div>
+                </div>
+                
+                <div class="birthday-image" style="height: 260px; margin: 25px; border-radius: 10px; overflow: hidden; position: relative; box-shadow: 0 8px 25px rgba(0,0,0,0.15);">
+                    <img class="birthday-img">
+                    <div class="image-date" ></div>
+                </div>
+                
+                <div class="birthday-content" style="margin: 0 25px 25px; background: white; border-radius: 10px; padding: 25px;">
+                    <h3 class="name" style="color: #0083b0;"></h3>
+                    <div style="text-align: center; margin: 15px 0;">
+                        <span style="font-size: 28px;">🌊</span>
+                        <span style="font-size: 28px; margin: 0 15px;">💎</span>
+                        <span style="font-size: 28px;">🌀</span>
+                    </div>
+                    <p class="message" style="color: #2c3e50;"></p>
+                    <p class="verse" style="background: rgba(0, 180, 219, 0.08); padding: 15px; border-radius: 8px; border-left: 4px solid #00b4db;"></p>
+                </div>
+            </div>
+            <button class="btn download" style="background: linear-gradient(135deg, #00b4db, #0083b0);">
+                <i class="bi bi-download me-2"></i> Descargar Tarjeta
+            </button>
+        </div>
+    </div>
+
+    <!-- PLANTILLA MASCULINA 9 - NARANJA ENERGÍA -->
+    <div class="birthday-template male col-lg-6 col-md-8 col-sm-10">
+        <div class="birthday-wrapper">
+            <div class="birthday-export" style="border: 10px solid #4a148c;">
+                <div class="birthday-content" style="margin: 30px; background: white; border-radius: 15px; padding: 30px; position: relative; overflow: hidden;">
+                    <div style="position: absolute; top: 0; left: 0; right: 0; height: 5px; background: linear-gradient(90deg, #4a148c, #ff7e5f, #4a148c);"></div>
+                    <h3 class="name" style="color: #4a148c;"></h3>
+                    <div style="text-align: center; margin: 20px 0;">
+                        <span style="display: inline-block; animation: pulse 1.5s infinite; font-size: 32px;">☀️</span>
+                    </div>
+                    <p class="message" style="color: #2c3e50;"></p>
+                    <p class="verse" style="background: rgba(74, 20, 140, 0.05); border: 2px solid rgba(74, 20, 140, 0.2); padding: 15px; border-radius: 10px;"></p>
+                </div>
+                
+                <div class="birthday-image" style="height: 240px; margin: 0 30px 30px; border-radius: 20px; overflow: hidden; border: 4px solid #4a148c;">
+                    <img class="birthday-img">
+                    <div class="image-date" ></div>
+                </div>
+            </div>
+            <button class="btn download" style="background: linear-gradient(135deg, #ff7e5f, #4a148c);">
+                <i class="bi bi-download me-2"></i> Descargar Tarjeta
+            </button>
+        </div>
+    </div>
+
+    <!-- PLANTILLA MASCULINA 10 - MARINO PROFUNDO -->
+    <div class="birthday-template male col-lg-6 col-md-8 col-sm-10">
+        <div class="birthday-wrapper">
+            <div class="birthday-export" style="border: 8px solid #e94560;">
+                <div class="birthday-header" style="background: rgba(233, 69, 96, 0.2);">
+                    <div class="serpentina-text" style="color: #e94560; font-family: 'Georgia', serif; font-style: italic;">Feliz Cumpleaños</div>
+                </div>
+                
+                <div class="birthday-image" style="height: 270px; margin: 25px; border-radius: 10px; overflow: hidden; position: relative; border: 3px solid #e94560;">
+                    <img class="birthday-img">
+                    <div class="image-date" ></div>
+                </div>
+                
+                <div class="birthday-content" style="margin: 0 25px 25px; background: rgba(255, 255, 255, 0.95); border-radius: 10px; padding: 25px;">
+                    <h3 class="name" style="color: #0f3460;"></h3>
+                    <div style="display: flex; justify-content: center; gap: 15px; margin: 20px 0;">
+                        <span style="font-size: 24px; color: #0f3460;">⚓</span>
+                        <span style="font-size: 24px; color: #e94560;">🎣</span>
+                        <span style="font-size: 24px; color: #0f3460;">🌊</span>
+                    </div>
+                    <p class="message" style="color: #2c3e50;"></p>
+                    <p class="verse" style="background: rgba(15, 52, 96, 0.05); border-left: 4px solid #0f3460; color: #0f3460;"></p>
+                </div>
+            </div>
+            <button class="btn download" style="background: linear-gradient(135deg, #0f3460, #e94560);">
+                <i class="bi bi-download me-2"></i> Descargar Tarjeta
+            </button>
+        </div>
+    </div>
+
+    <!-- ============ PLANTILLAS FEMENINAS ============ -->
+    
+    <!-- PLANTILLA FEMENINA 1 - ROSA PASTEL -->
+    <div class="birthday-template female col-lg-6 col-md-8 col-sm-10">
+        <div class="birthday-wrapper">
+            <div class="birthday-export" style="border: 10px solid #cdb4db; padding: 10px">
+                <div class="birthday-header" style="background:rgb(177 72 195 / 35%);">
+                    <div class="serpentina-text" style="color: #a2e2ff; text-shadow: 2px 2px 4px rgba(0,0,0,0.1); font-weight: bold; font-size: 2rem;">✨ Feliz Cumpleaños ✨</div>
+                </div>
+                
+                <div class="birthday-image" style="height: 260px; margin: 25px; border-radius: 20px; overflow: hidden; position: relative; border: 6px solid white; box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
+                    <img class="birthday-img">
+                    <div class="image-date" ></div>
+                </div>
+                
+                <div class="birthday-content" style="margin: 0 25px 25px; background: white; border-radius: 20px; padding: 30px; position: relative;">
+                    <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: #cdb4db; color: white; padding: 8px 30px; border-radius: 20px; font-weight: 500;">PARA TI</div>
+                    <h3 class="name" style="color: #ffafcc; margin-top: 20px;"></h3>
+                    <div style="text-align: center; margin: 20px 0;">
+                        <span style="font-size: 28px; margin: 0 5px;">🌸</span>
+                        <span style="font-size: 28px; margin: 0 5px;">🌺</span>
+                        <span style="font-size: 28px; margin: 0 5px;">🌷</span>
+                        <span style="font-size: 28px; margin: 0 5px;">🌼</span>
+                    </div>
+                    <p class="message" style="color: #5a5a5a; line-height: 1.7;"></p>
+                    <p class="verse" style="background: rgba(255, 175, 204, 0.1); border-radius: 10px; padding: 15px; margin-top: 20px;"></p>
+                </div>
+            </div>
+            <button class="btn download" style="background: linear-gradient(135deg, #ffafcc, #a2d2ff);">
+                <i class="bi bi-download me-2"></i> Descargar Tarjeta
+            </button>
+        </div>
+    </div>
+
+    <!-- PLANTILLA FEMENINA 2 - LILA ELEGANTE -->
+    <div class="birthday-template female col-lg-6 col-md-8 col-sm-10">
+        <div class="birthday-wrapper">
+            <div class="birthday-export" style="border: 8px solid #b19cd9;">
+                <div class="birthday-content" style="margin: 30px; background: white; border-radius: 15px; padding: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
+                    <h3 class="name" style="color: #8a2be2; text-align: center; margin-bottom: 25px;"></h3>
+                    <div style="border-top: 2px solid #e1ccec; border-bottom: 2px solid #e1ccec; padding: 15px 0; margin: 20px 0;">
+                        <p class="message" style="color: #5a5a5a; text-align: center; font-style: italic;"></p>
+                    </div>
+                    <div class="birthday-image" style="height: 220px; margin: 20px 0; border-radius: 10px; overflow: hidden; position: relative;">
+                        <img class="birthday-img">
+                        <div class="image-date" ></div>
+                    </div>
+                    <p class="verse" style="text-align: center; color: #8a2be2; font-weight: 500; margin-top: 20px;"></p>
+                </div>
+            </div>
+            <button class="btn download" style="background: linear-gradient(135deg, #b19cd9, #8a2be2);">
+                <i class="bi bi-download me-2"></i> Descargar Tarjeta
+            </button>
+        </div>
+    </div>
+
+    <!-- PLANTILLA FEMENINA 3 - DORADO Y BLANCO -->
+    <div class="birthday-template female col-lg-6 col-md-8 col-sm-10">
+        <div class="birthday-wrapper">
+            <div class="birthday-export" style="border: 12px solid #daa520;">
+                <div class="birthday-header" style="background: #daa520; padding: 15px;">
+                    <div class="serpentina-text" style="color: white; font-weight: bold; letter-spacing: 1px;">FELIZ CUMPLEAÑOS</div>
+                </div>
+                
+                <div class="birthday-content" style="margin: 25px; background: white; border-radius: 10px; padding: 25px; position: relative;">
+                    <div style="position: absolute; top: -12px; right: 30px; background: #daa520; color: white; width: 24px; height: 24px; border-radius: 50%; text-align: center; line-height: 24px;">👑</div>
+                    <h3 class="name" style="color: #b8860b; text-align: center;"></h3>
+                    <div style="text-align: center; margin: 20px 0;">
+                        <span style="color: #daa520; font-size: 24px;">💫</span>
+                        <span style="color: #daa520; font-size: 24px; margin: 0 15px;">✨</span>
+                        <span style="color: #daa520; font-size: 24px;">⭐</span>
+                    </div>
+                    <p class="message" style="color: #5a5a5a;"></p>
+                </div>
+                
+                <div class="birthday-image" style="height: 240px; margin: 0 25px 25px; border-radius: 10px; overflow: hidden; border: 3px solid #daa520; position: relative;">
+                    <img class="birthday-img">
+                    <div class="image-date" ></div>
+                </div>
+                
+                <p class="verse" style="text-align: center; padding: 0 25px 25px; color: #1b1a16; font-style: italic;"></p>
+            </div>
+            <button class="btn download" style="background: linear-gradient(135deg, #daa520, #b8860b);">
+                <i class="bi bi-download me-2"></i> Descargar Tarjeta
+            </button>
+        </div>
+    </div>
+
+    <!-- PLANTILLA FEMENINA 4 - AZUL CELESTE -->
+    <div class="birthday-template female col-lg-6 col-md-8 col-sm-10">
+        <div class="birthday-wrapper">
+            <div class="birthday-export" style="border: 10px solid #ffaaa5;">
+                <div class="birthday-image" style="height: 280px; margin: 30px; border-radius: 20px; overflow: hidden; position: relative; box-shadow: 0 15px 30px rgba(0,0,0,0.1);">
+                    <img class="birthday-img">
+                    <div class="image-date" ></div>
+                </div>
+                
+                <div class="birthday-content" style="margin: 0 30px 30px; background: white; border-radius: 20px; padding: 30px;">
+                    <h3 class="name" style="color: #ff8b94; text-align: center;"></h3>
+                    <div style="text-align: center; margin: 20px 0;">
+                        <span style="display: inline-block; width: 40px; height: 40px; background: #a8e6cf; border-radius: 50%; line-height: 40px; margin: 0 5px;">🦋</span>
+                        <span style="display: inline-block; width: 40px; height: 40px; background: #ffaaa5; border-radius: 50%; line-height: 40px; margin: 0 5px;">🌸</span>
+                        <span style="display: inline-block; width: 40px; height: 40px; background: #dcedc1; border-radius: 50%; line-height: 40px; margin: 0 5px;">✨</span>
+                    </div>
+                    <p class="message" style="color: #5a5a5a; text-align: center;"></p>
+                    <p class="verse" style="background: rgba(168, 230, 207, 0.2); padding: 15px; border-radius: 10px; margin-top: 20px;"></p>
+                </div>
+            </div>
+            <button class="btn download" style="background: linear-gradient(135deg, #ffaaa5, #a8e6cf);">
+                <i class="bi bi-download me-2"></i> Descargar Tarjeta
+            </button>
+        </div>
+    </div>
+
+    <!-- PLANTILLA FEMENINA 5 - CORAL SUAVE -->
+    <div class="birthday-template female col-lg-6 col-md-8 col-sm-10">
+        <div class="birthday-wrapper">
+            <div class="birthday-export" style="border: 8px solid #ff8b94;">
+                <div class="birthday-header" style="background: rgba(255, 139, 148, 0.2);">
+                    <div class="serpentina" style="background: repeating-linear-gradient(45deg, transparent, transparent 10px, #ff8b94 10px, #ff8b94 20px); opacity: 0.3;"></div>
+                    <div class="serpentina-text" style="color: #ff8b94; font-weight: 800;">¡FELIZ CUMPLEAÑOS!</div>
+                </div>
+                
+                <div class="birthday-content" style="margin: 25px; background: white; border-radius: 15px; padding: 25px;">
+                    <h3 class="name" style="color: #ff8b94;"></h3>
+                    <div style="border-left: 4px solid #ffd3b6; padding-left: 15px; margin: 20px 0;">
+                        <p class="message" style="color: #5a5a5a;"></p>
+                    </div>
+                    <p class="verse" style="color: #ff8b94; font-weight: 500; text-align: right;"></p>
+                </div>
+                
+                <div class="birthday-image" style="height: 250px; margin: 0 25px 25px; border-radius: 10px; overflow: hidden; position: relative; border: 4px solid #ffd3b6;">
+                    <img class="birthday-img">
+                    <div class="image-date" ></div>
+                </div>
+            </div>
+            <button class="btn download" style="background: linear-gradient(135deg, #ff8b94, #ffaaa5);">
+                <i class="bi bi-download me-2"></i> Descargar Tarjeta
+            </button>
+        </div>
+    </div>
+
+    <!-- PLANTILLA FEMENINA 6 - MINT ELEGANTE -->
+    <div class="birthday-template female col-lg-6 col-md-8 col-sm-10">
+        <div class="birthday-wrapper">
+            <div class="birthday-export" style="border: 10px solid #84ffff;">
+                <div class="birthday-image" style="height: 270px; margin: 30px 30px 15px; border-radius: 15px; overflow: hidden; position: relative;">
+                    <img class="birthday-img">
+                    <div class="image-date" ></div>
+                </div>
+                <br>
+                <div class="birthday-content" style="margin: 0 30px 30px; background: white; border-radius: 15px; padding: 25px; position: relative;">
+                    <div style="position: absolute; top: -20px; left: 50%; transform: translateX(-50%); background: #84ffff; color: #00796b; padding: 10px 40px; border-radius: 25px; font-weight: bold;">FELICIDADES</div>
+                    <h3 class="name" style="color: #00796b; margin-top: 25px; text-align: center;"></h3>
+                    <p class="message" style="color: #455a64; text-align: center;"></p>
+                    <div style="text-align: center; margin: 20px 0;">
+                        <span style="color: #84ffff; font-size: 28px;">🍃</span>
+                        <span style="color: #84ffff; font-size: 28px; margin: 0 15px;">🌿</span>
+                        <span style="color: #84ffff; font-size: 28px;">☘️</span>
+                    </div>
+                    <p class="verse" style="background: rgba(132, 255, 255, 0.1); padding: 15px; border-radius: 10px;"></p>
+                </div>
+            </div>
+            <button class="btn download" style="background: linear-gradient(135deg, #84ffff, #00796b);">
+                <i class="bi bi-download me-2"></i> Descargar Tarjeta
+            </button>
+        </div>
+    </div>
+
+    <!-- PLANTILLA FEMENINA 7 - VIOLETA MÍSTICO -->
+    <div class="birthday-template female col-lg-6 col-md-8 col-sm-10">
+        <div class="birthday-wrapper">
+            <div class="birthday-export" style="border: 8px solid #957dad;">
+                <div class="birthday-content" style="margin: 30px; background: white; border-radius: 20px; padding: 30px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
+                    <h3 class="name" style="color: #6a4c93; text-align: center;"></h3>
+                    <div style="text-align: center; margin: 25px 0;">
+                        <span style="display: inline-block; width: 50px; height: 50px; background: linear-gradient(135deg, #d4a5c4, #c9b6e4); border-radius: 50%; line-height: 50px; font-size: 24px;">🔮</span>
+                    </div>
+                    <p class="message" style="color: #5a5a5a; text-align: center; font-style: italic;"></p>
+                    
+                    <div class="birthday-image" style="height: 220px; margin: 25px 0; border-radius: 10px; overflow: hidden; position: relative;">
+                        <img class="birthday-img">
+                        <div class="image-date" ></div>
+                    </div>
+                    
+                    <p class="verse" style="color: #6a4c93; text-align: center; font-weight: 500; margin-top: 20px;"></p>
+                </div>
+            </div>
+            <button class="btn download" style="background: linear-gradient(135deg, #957dad, #6a4c93);">
+                <i class="bi bi-download me-2"></i> Descargar Tarjeta
+            </button>
+        </div>
+    </div>
+
+    <!-- PLANTILLA FEMENINA 8 - MELOCOTÓN SUAVE -->
+    <div class="birthday-template female col-lg-6 col-md-8 col-sm-10">
+        <div class="birthday-wrapper">
+            <div class="birthday-export" style="border: 12px solid #ffab91;">
+                <div class="birthday-header" style="background: #ffab91; padding: 15px;">
+                    <div class="serpentina-text" style="color: white; font-weight: bold; letter-spacing: 2px;">FELIZ CUMPLEAÑOS</div>
+                </div>
+                
+                <div class="birthday-content" style="margin: 25px; background: white; border-radius: 10px; padding: 25px;">
+                    <h3 class="name" style="color: #ff7043; text-align: center;"></h3>
+                    <div style="border-top: 1px solid #ffe0b2; border-bottom: 1px solid #ffe0b2; padding: 20px 0; margin: 20px 0;">
+                        <p class="message" style="color: #5a5a5a; text-align: center;"></p>
+                    </div>
+                    <p class="verse" style="color: #ff7043; font-style: italic; text-align: center;"></p>
+                </div>
+                
+                <div class="birthday-image" style="height: 240px; margin: 0 25px 25px; border-radius: 15px; overflow: hidden; position: relative; border: 5px solid #ffab91;">
+                    <img class="birthday-img">
+                    <div class="image-date" ></div>
+                </div>
+                
+                <div style="text-align: center; padding-bottom: 20px;">
+                    <span style="color: #ff7043; font-size: 24px;">🍑</span>
+                    <span style="color: #ff7043; font-size: 24px; margin: 0 15px;">🍊</span>
+                    <span style="color: #ff7043; font-size: 24px;">🌅</span>
+                </div>
+            </div>
+            <button class="btn download" style="background: linear-gradient(135deg, #ffab91, #ff7043);">
+                <i class="bi bi-download me-2"></i> Descargar Tarjeta
+            </button>
+        </div>
+    </div>
+
+    <!-- PLANTILLA FEMENINA 9 - LAVANDA ROMÁNTICO -->
+    <div class="birthday-template female col-lg-6 col-md-8 col-sm-10">
+        <div class="birthday-wrapper">
+            <div class="birthday-export" style="border: 8px solid #9370db;">
+                <div class="birthday-image" style="height: 260px; margin: 30px; border-radius: 20px; overflow: hidden; position: relative; box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
+                    <img class="birthday-img">
+                    <div class="image-date"></div>
+                </div>
+                
+                <div class="birthday-content" style="margin: 0 30px 30px; background: white; border-radius: 20px; padding: 30px;">
+                    <h3 class="name" style="color: #9370db; text-align: center;"></h3>
+                    <div style="text-align: center; margin: 20px 0;">
+                        <span style="font-size: 28px; color: #9370db;">💜</span>
+                        <span style="font-size: 28px; color: #9370db; margin: 0 10px;">🪻</span>
+                        <span style="font-size: 28px; color: #9370db;">🌌</span>
+                    </div>
+                    <p class="message" style="color: #5a5a5a; text-align: center;"></p>
+                    <p class="verse" style="background: rgba(147, 112, 219, 0.1); padding: 15px; border-radius: 10px; margin-top: 20px;"></p>
+                </div>
+            </div>
+            <button class="btn download" style="background: linear-gradient(135deg, #9370db, #8a2be2);">
+                <i class="bi bi-download me-2"></i> Descargar Tarjeta
+            </button>
+        </div>
+    </div>
+
+    <!-- PLANTILLA FEMENINA 10 - ROSA CHAMPÁN -->
+    <div class="birthday-template female col-lg-6 col-md-8 col-sm-10">
+        <div class="birthday-wrapper">
+            <div class="birthday-export" style="border: 10px solid #ffb6c1;">
+                <div class="birthday-content" style="margin: 30px; background: white; border-radius: 15px; padding: 30px; position: relative;">
+                    <div style="position: absolute; top: -15px; left: -15px; width: 40px; height: 40px; background: #ffb6c1; border-radius: 50%; text-align: center; line-height: 40px; color: white; font-size: 20px;">🎀</div>
+                    <div style="position: absolute; bottom: -15px; right: -15px; width: 40px; height: 40px; background: #ffb6c1; border-radius: 50%; text-align: center; line-height: 40px; color: white; font-size: 20px;">💝</div>
+                    
+                    <h3 class="name" style="color: #ff69b4; text-align: center;"></h3>
+                    <div style="text-align: center; margin: 25px 0;">
+                        <span style="display: inline-block; animation: float 3s infinite ease-in-out; font-size: 32px;">🎈</span>
+                        <span style="display: inline-block; animation: float 3s infinite ease-in-out 0.5s; font-size: 32px; margin: 0 20px;">🎂</span>
+                        <span style="display: inline-block; animation: float 3s infinite ease-in-out 1s; font-size: 32px;">🎁</span>
+                    </div>
+                    <p class="message" style="color: #5a5a5a; text-align: center;"></p>
+                    
+                    <div class="birthday-image" style="height: 200px; margin: 25px 0; border-radius: 10px; overflow: hidden; position: relative;">
+                        <img class="birthday-img">
+                        <div class="image-date"></div>
+                    </div>
+                    
+                    <p class="verse" style="color: #ff69b4; text-align: center; font-weight: 500; margin-top: 20px;"></p>
+                </div>
+            </div>
+            <button class="btn download" style="background: linear-gradient(135deg, #ffb6c1, #ff69b4);">
+                <i class="bi bi-download me-2"></i> Descargar Tarjeta
+            </button>
+        </div>
+    </div>
+</div>
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>

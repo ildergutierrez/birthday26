@@ -1,0 +1,482 @@
+/* css/style.css */
+/* css/style.css */
+/* ============ ESTILOS GENERALES ============ */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-weight: 700;
+    color: #2c3e50;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+}
+
+/* ============ PLANTILLAS DE CUMPLEAÑOS ============ */
+.birthday-wrapper {
+    padding: 20px;
+    margin-bottom: 30px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.birthday-export {
+    width: 100%;
+    max-width: 450px;
+    min-height: 600px;
+    border-radius: 20px;
+    overflow: visible !important;
+    position: relative;
+    margin: 0 auto;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    background: #f0f0f0; /* Fondo base por defecto */
+}
+
+.birthday-wrapper:hover .birthday-export {
+    transform: translateY(-5px);
+}
+
+/* ============ CABECERA CON SERPENTINA ============ */
+.birthday-header {
+    height: 60px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.serpentina {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: 
+        repeating-linear-gradient(
+            45deg,
+            transparent,
+            transparent 10px,
+            rgba(255,255,255,0.3) 10px,
+            rgba(255,255,255,0.3) 20px
+        );
+}
+
+.serpentina-text {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    z-index: 2;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    letter-spacing: 2px;
+}
+
+/* ============ SECCIÓN DE IMAGEN ============ */
+.birthday-image {
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 20px;
+    border-radius: 15px;
+    overflow: visible !important;
+}
+
+.birthday-img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    border: 3px solid white;
+}
+
+/* FECHA DEBAJO DE LA IMAGEN - ESTILO BASE FUERTE */
+.image-date {
+    position: absolute !important;
+    bottom: -20px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    z-index: 1000 !important;
+    background: white !important;
+    padding: 8px 20px !important;
+    border-radius: 20px !important;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1) !important;
+    font-size: 1.1rem !important;
+    min-width: 120px !important;
+    text-align: center !important;
+    border: 2px solid currentColor !important;
+}
+
+/* Colores específicos para cada género */
+.male .image-date {
+    border-color: #1565c0 !important;
+    background: white !important;
+    color: #1a2980 !important;
+}
+
+.female .image-date {
+    border-color: #d81b60 !important;
+    background: white !important;
+    color: #d81b60 !important;
+}
+
+.unisex .image-date {
+    border-color: #5e35b1 !important;
+    background: white !important;
+    color: #5e35b1 !important;
+}
+
+/* ============ CONTENIDO DE TEXTO ============ */
+.birthday-content {
+    padding: 30px;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.95);
+    margin: 20px;
+    border-radius: 15px;
+    position: relative;
+}
+
+/* Estilos de texto específicos por género */
+.male .birthday-content {
+    color: #1a2980;
+    border-left: 5px solid #1565c0;
+}
+
+.female .birthday-content {
+    color: #d81b60;
+    border-left: 5px solid #ff6b6b;
+}
+
+.unisex .birthday-content {
+    color: #5e35b1;
+    border-left: 5px solid #6a11cb;
+}
+
+.name {
+    font-weight: 800;
+    margin-bottom: 25px;
+    font-size: 2.2rem;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 15px;
+}
+
+.name::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    right: 25%;
+    height: 3px;
+    background: currentColor;
+    border-radius: 2px;
+}
+
+.message {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.7;
+    font-weight: 400;
+    color: #34495e;
+}
+
+.verse {
+    font-style: italic;
+    font-size: 1.1rem;
+    margin-top: 25px;
+    padding: 15px;
+    background: rgba(52, 152, 219, 0.1);
+    border-radius: 10px;
+    border-left: 4px solid #3498db;
+    color: #2c3e50;
+}
+
+/* ============ BOTONES ============ */
+.download {
+    margin-top: 25px;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 14px 30px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    border: none;
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+    max-width: 400px;
+    margin: 25px auto;
+    display: block;
+    cursor: pointer;
+}
+
+.download:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.download::after {
+    content: " 🎁";
+}
+
+.male .download {
+    background: linear-gradient(135deg, #1565c0, #1a2980);
+    color: white;
+}
+
+.female .download {
+    background: linear-gradient(135deg, #d81b60, #ff6b6b);
+    color: white;
+}
+
+.unisex .download {
+    background: linear-gradient(135deg, #5e35b1, #6a11cb);
+    color: white;
+}
+
+/* ============ DECORACIONES SUBTILES ============ */
+.birthday-decoration {
+    position: absolute;
+    font-size: 24px;
+    opacity: 0.6;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.deco-1 { top: 10%; left: 5%; }
+.deco-2 { top: 10%; right: 5%; }
+.deco-3 { bottom: 10%; left: 5%; }
+.deco-4 { bottom: 10%; right: 5%; }
+
+.male .birthday-decoration { color: #4fc3f7; }
+.female .birthday-decoration { color: #f48fb1; }
+.unisex .birthday-decoration { color: #ba68c8; }
+
+/* ============ IMÁGENES DE DECORACIÓN ============ */
+.birthday-image::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    right: -15px;
+    bottom: -15px;
+    background-image: url('https://www.pngwing.com/es/png-bhzyv');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 768px) {
+    .birthday-export {
+        max-width: 400px;
+        min-height: 550px;
+    }
+    
+    .birthday-image {
+        height: 240px;
+        margin: 15px;
+    }
+    
+    .name {
+        font-size: 1.8rem;
+    }
+    
+    .message {
+        font-size: 1.1rem;
+    }
+    
+    .serpentina-text {
+        font-size: 1.5rem;
+    }
+    
+    .image-date {
+        font-size: 1rem !important;
+        padding: 6px 15px !important;
+        min-width: 100px !important;
+        bottom: -20px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .birthday-export {
+        max-width: 350px;
+    }
+    
+    .birthday-content {
+        padding: 20px;
+        margin: 15px;
+    }
+    
+    .name {
+        font-size: 1.6rem;
+    }
+    
+    .message {
+        font-size: 1rem;
+    }
+    
+    .image-date {
+        font-size: 0.9rem !important;
+        padding: 5px 12px !important;
+        min-width: 90px !important;
+        bottom: -18px !important;
+    }
+}
+
+/* ============ EFECTO DE SOMBRA INTERNA ============ */
+.birthday-export::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 15px;
+    box-shadow: inset 0 0 50px rgba(0,0,0,0.1);
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* ============ ANIMACIONES ============ */
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes confettiFall {
+    0% { transform: translateY(-100px) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+}
+
+/* ============ ESTILOS PARA EL HEADER ============ */
+.header-card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.current-date {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 50px;
+    display: inline-block;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+.info-badges {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.badge-gender {
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: 500;
+    color: white;
+}
+
+.badge-male {
+    background: linear-gradient(135deg, #1565c0, #1a2980);
+}
+
+.badge-female {
+    background: linear-gradient(135deg, #d81b60, #ff6b6b);
+}
+
+.badge-unisex {
+    background: linear-gradient(135deg, #5e35b1, #6a11cb);
+}
+
+/* ============ ALERTAS ============ */
+.alert-info {
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+    border: 1px solid #90caf9;
+    color: #1565c0;
+}
+
+/* ============ LOADING SPINNER ============ */
+.spinner-border {
+    vertical-align: middle;
+}
+
+/* ============ CONFETI ANIMADO ============ */
+.confetti {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/2582/2582635.png');
+    background-size: contain;
+    opacity: 0;
+    z-index: 0;
+    pointer-events: none;
+    animation: confettiFall 5s linear infinite;
+}
+
+/* ============ SERPENTINA REAL ============ */
+.real-serpentina {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background-image: url('https://www.pngwing.com/es/png-bhzyv');
+    background-size: auto 100%;
+    background-repeat: repeat-x;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+/* ============ ESTILOS PARA LA FECHA VISIBLE ============ */
+.image-date {
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: block !important;
+}
