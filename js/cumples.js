@@ -52,9 +52,7 @@ export  const birthdays = {
     { nombre: "Wendy Quintero", sexo: "F", imagen: "imagenes/user/wendy_quintero.jpg" }
   ],
 
-  "05-09": [
-    { nombre: "Antonella Salazar", sexo: "F", imagen: "imagenes/user/" }
-  ],
+  
 
   "05-21": [
     { nombre: "Deimer Gutierrez", sexo: "M", imagen: "imagenes/user/deimer_gutierrez.jpg" }
@@ -83,7 +81,9 @@ export  const birthdays = {
   "08-26": [
     { nombre: "Jhon Martinez", sexo: "M", imagen: "imagenes/user/edinson_martinez.jpg" }
   ],
-
+"09-05": [
+    { nombre: "Antonella Salazar", sexo: "F", imagen: "imagenes/user/" }
+  ],
   "09-11": [
     { nombre: "Teresa Pernet", sexo: "F", imagen: "imagenes/user/teresa.jpg" }
   ],
