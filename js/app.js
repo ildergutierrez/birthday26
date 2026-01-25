@@ -1,67 +1,12 @@
 // js/app.js
-
-document.addEventListener("DOMContentLoaded", () => {
   /* ======================
        DATOS DE CUMPLEAÑOS
     ======================*/
-  const birthdays = {
-    "01-24": [
-      {
-        nombre: "Andres F. Nuñez Hernandez",
-        sexo: "M",
-        imagen:
-          "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
-      },
-      {
-        nombre: "María Gómez",
-        sexo: "F",
-        imagen: "",
-      },
-    ],
-    "01-25": [
-      {
-        nombre: "Carlos Rodríguez",
-        sexo: "M",
-        imagen:
-          "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face",
-      },
-    ],
-    "02-14": [
-      {
-        nombre: "Ana López",
-        sexo: "F",
-        imagen:
-          "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face",
-      },
-    ],
-    "03-08": [
-      {
-        nombre: "Patricia Sánchez",
-        sexo: "F",
-        imagen:
-          "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop&crop=face",
-      },
-    ],
-    "04-15": [
-      {
-        nombre: "Roberto Díaz",
-        sexo: "M",
-        imagen:
-          "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop&crop=face",
-      },
-    ],
-    "05-20": [
-      {
-        nombre: "Sofía Martínez",
-        sexo: "F",
-        imagen:
-          "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face",
-      },
-    ],
-  };
+import{birthdays} from "./cumples.js";
+document.addEventListener("DOMContentLoaded", () => {
 
   /* ======================
-       FONDOS DE CUMPLEAÑOS (Imágenes temáticas)
+       FONDOS DE CUMPLEAÑOS (Imagenes temáticas)
     ======================*/
   const birthdayBackgrounds = [
     "imagenes/fondos/marco_1.png",    "imagenes/fondos/marco_2.png",    "imagenes/fondos/marco_3.jpg",    "imagenes/fondos/marco_4.png",
@@ -376,8 +321,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const container = document.getElementById("birthdayContainer");
   const today = todayKey();
 
-  // console.log("Fecha de hoy:", today);
-  // console.log("Cumpleaños para hoy:", birthdays[today]);
+  console.log("Fecha de hoy:", today);
+  console.log("Cumpleaños para hoy:", birthdays[today]);
 
   if (!birthdays[today] || birthdays[today].length === 0) {
     container.innerHTML = `
