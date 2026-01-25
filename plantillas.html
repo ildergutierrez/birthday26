@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feliz Cumpleaños ICC NC</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" />
+
+    <link rel="icon" href="imagenes/icon/ficon.svg" />
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+        /* Estilos adicionales para el header */
+        .header-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .current-date {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 10px 25px;
+            border-radius: 50px;
+            display: inline-block;
+            margin-top: 15px;
+            font-weight: 500;
+        }
+
+        .info-badges {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .badge-gender {
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: 500;
+            color: white;
+        }
+
+        .badge-male {
+            background: linear-gradient(135deg, #1565c0, #1a2980);
+        }
+
+        .badge-female {
+            background: linear-gradient(135deg, #d81b60, #ff6b6b);
+        }
+
+        .badge-unisex {
+            background: linear-gradient(135deg, #5e35b1, #6a11cb);
+        }
+
+        /* Estilos para las animaciones */
+        @keyframes pulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container py-5">
+        <!-- ENCABEZADO ELEGANTE -->
+        <div class="header-card text-center">
+            <div class="mb-4">
+                <i class="bi bi-balloon-heart-fill" style="font-size: 3rem; color: #e91e63"></i>
+            </div>
+            <h1 class="display-5 fw-bold mb-3">Feliz Cumpleaños</h1>
+            <p class="lead text-muted mb-4">
+                Celebrando con bendiciones y amor cristiano
+            </p>
+
+            <div class="current-date">
+                <i class="bi bi-calendar-week me-2"></i>
+                <span id="currentDate"></span>
+            </div>
+
+            <div class="info-badges">
+                <span class="badge-gender badge-male">
+                    <i class="bi bi-gender-male me-1"></i> Masculino
+                </span>
+                <span class="badge-gender badge-female">
+                    <i class="bi bi-gender-female me-1"></i> Femenino
+                </span>
+                <span class="badge-gender badge-unisex">
+                    <i class="bi bi-gender-ambiguous me-1"></i> Unisex
+                </span>
+            </div>
+        </div>
+
+        <!-- CONTENEDOR DE TARJETAS -->
+        <div id="birthdayContainer" class="row justify-content-center"></div>
+
+        <!-- PIE DE PÁGINA -->
+        <div class="row mt-5">
+            <div class="col-12 text-center">
+                <div class="card border-0 bg-transparent">
+                    <div class="card-body">
+                        <p class="text-muted mb-0">
+                            <i class="bi bi-heart-fill text-danger"></i>
+                            Cada tarjeta incluye un mensaje único y una cita bíblica
+                            especial.
+                            <i class="bi bi-heart-fill text-danger"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+    <script type="module" src="js/app.js"></script>
+</body>
+
+</html>

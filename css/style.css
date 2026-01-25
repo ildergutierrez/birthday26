@@ -42,9 +42,7 @@ h1 {
 
 
 .birthday-export {
-    width: 100%;
-    max-width: 450px;
-    min-height: 600px;
+    width: 95%;
     border-radius: 20px;
     overflow: visible !important;
     position: relative;
@@ -53,7 +51,7 @@ h1 {
     transition: transform 0.3s ease;
     display: flex;
     flex-direction: column;
-    background: #f0f0f0; /* Fondo base por defecto */
+    background: #f0f0f096; /* Fondo base por defecto */
 }
 
 .birthday-wrapper:hover .birthday-export {
@@ -303,10 +301,7 @@ h1 {
 
 /* ============ RESPONSIVE ============ */
 @media (max-width: 768px) {
-    .birthday-export {
-        max-width: 400px;
-        min-height: 550px;
-    }
+
     
     .birthday-image {
         height: 240px;
@@ -334,9 +329,7 @@ h1 {
 }
 
 @media (max-width: 576px) {
-    .birthday-export {
-        max-width: 350px;
-    }
+
     
     .birthday-content {
         padding: 20px;

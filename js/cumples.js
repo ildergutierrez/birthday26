@@ -1,7 +1,13 @@
-export  const birthdays = {
 // MM-DD
+export  const birthdays = {
+
+  "01-00": [
+    { nombre: "Jeison Jimenez", sexo: "M", imagen: "imagenes/" },
+    { nombre: "Sandrith", sexo: "F", imagen: "imagenes/user/" }
+  ],
+
   "01-09": [
-    { nombre: "Angie Maldonado", sexo: "F", imagen: "imagenes/user/" }
+    { nombre: "Anyi Maldonado", sexo: "F", imagen: "imagenes/user/" }
   ],
 
   "01-19": [
@@ -21,11 +27,15 @@ export  const birthdays = {
   ],
 
   "02-20": [
-    { nombre: "Julián Castro", sexo: "M", imagen: "imagenes/user/" }
+    { nombre: "Julián Castro", sexo: "M", imagen: "imagenes/user/julian.jpg" }
   ],
 
   "02-22": [
-    { nombre: "Brenda Ramos", sexo: "F", imagen: "imagenes/user/" }
+    { nombre: "Brenda Ramos", sexo: "F", imagen: "imagenes/user/brenda_ramos.jpg" }
+  ],
+
+  "04-01": [
+    { nombre: "Eiduen Contreras", sexo: "M", imagen: "imagenes/user/eiduen_contreras.jpg" }
   ],
 
   "04-07": [
@@ -52,8 +62,6 @@ export  const birthdays = {
     { nombre: "Wendy Quintero", sexo: "F", imagen: "imagenes/user/wendy_quintero.jpg" }
   ],
 
-  
-
   "05-21": [
     { nombre: "Deimer Gutierrez", sexo: "M", imagen: "imagenes/user/deimer_gutierrez.jpg" }
   ],
@@ -67,11 +75,20 @@ export  const birthdays = {
   ],
 
   "06-20": [
+    { nombre: "Juan Pérez", sexo: "M", imagen: "imagenes/user/" },
     { nombre: "Tatiana Arias", sexo: "F", imagen: "imagenes/user/tatiana_arias.jpg" }
   ],
 
   "07-06": [
     { nombre: "Paola Contreras", sexo: "F", imagen: "imagenes/user/paola_contretas.jpg" }
+  ],
+
+  "07-14": [
+    { nombre: "Kelly Bayona", sexo: "F", imagen: "imagenes/user/" }
+  ],
+
+  "07-25": [
+    { nombre: "Jhon Alejandro", sexo: "M", imagen: "imagenes/user/" }
   ],
 
   "07-28": [
@@ -81,9 +98,11 @@ export  const birthdays = {
   "08-26": [
     { nombre: "Jhon Martinez", sexo: "M", imagen: "imagenes/user/edinson_martinez.jpg" }
   ],
-"09-05": [
+
+  "09-05": [
     { nombre: "Antonella Salazar", sexo: "F", imagen: "imagenes/user/" }
   ],
+
   "09-11": [
     { nombre: "Teresa Pernet", sexo: "F", imagen: "imagenes/user/teresa.jpg" }
   ],
@@ -113,11 +132,11 @@ export  const birthdays = {
   ],
 
   "12-23": [
-
     { nombre: "Nayobis Chavez", sexo: "F", imagen: "imagenes/user/nayobis.jpg" }
   ],
+
   "12-26": [
-    { nombre: "Marisol Carmona", sexo: "F", imagen: "imagenes/user/marisol_carmona.jpg" },
+    { nombre: "Marisol Carmona", sexo: "F", imagen: "imagenes/user/marisol_carmona.jpg" }
   ],
 
   "12-30": [
@@ -126,16 +145,6 @@ export  const birthdays = {
 
   "12-31": [
     { nombre: "Karol Vargas", sexo: "F", imagen: "imagenes/user/" }
-  ],
-
-  "00-00": [
-    { nombre: "Ewdin Contreras", sexo: "M", imagen: "imagenes/user/" },
-    { nombre: "Jeison Jimenez", sexo: "M", imagen: "imagenes/user/" },
-    { nombre: "Jhon Alejandro", sexo: "M", imagen: "imagenes/user/" },
-    { nombre: "Johan Polo", sexo: "M", imagen: "imagenes/user/" },
-    { nombre: "Jaun Pablo", sexo: "M", imagen: "imagenes/user/" },
-    { nombre: "Kelly Bayona", sexo: "F", imagen: "imagenes/user/" },
-    { nombre: "Sandrith", sexo: "F", imagen: "imagenes/user/" },
   ]
 
 };
