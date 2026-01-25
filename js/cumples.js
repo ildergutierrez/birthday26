@@ -1,5 +1,5 @@
 export  const birthdays = {
-
+// MM-DD
   "01-09": [
     { nombre: "Angie Maldonado", sexo: "F", imagen: "imagenes/user/" }
   ],
