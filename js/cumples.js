@@ -44,7 +44,7 @@ export  const birthdays = {
     { nombre: "Josue Gabalo", sexo: "M", imagen: "imagenes/user/" }
   ],
 
-  "04-29": [
+  "04-21": [
     { nombre: "Julissa Armesto", sexo: "F", imagen: "imagenes/user/" }
   ],
 
