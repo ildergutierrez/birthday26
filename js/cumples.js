@@ -15,7 +15,7 @@ export  const birthdays = {
   ],
 
   "01-26": [
-    { nombre: "Luz Camargo", sexo: "F", imagen: "imagenes/user/luz_keren.jpg" }
+    { nombre: "Luz Camargo", sexo: "F", imagen: "imagenes/user/luz_keren.jpg" },
   ],
 
   "02-01": [
@@ -67,7 +67,7 @@ export  const birthdays = {
   ],
 
   "05-30": [
-    { nombre: "Lorena Ramirez", sexo: "F", imagen: "imagenes/user/" }
+    { nombre: "Lorena Ramirez", sexo: "F", imagen: "imagenes/user/lorena_ramirez.png" }
   ],
 
   "06-07": [
@@ -84,7 +84,7 @@ export  const birthdays = {
   ],
 
   "07-14": [
-    { nombre: "Kelly Bayona", sexo: "F", imagen: "imagenes/user/" }
+    { nombre: "Kelly Bayona", sexo: "F", imagen: "imagenes/user/kelly_angarita.svg" }
   ],
 
   "07-25": [
