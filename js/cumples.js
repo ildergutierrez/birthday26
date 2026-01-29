@@ -25,7 +25,9 @@ export  const birthdays = {
   "02-05": [
     { nombre: "Luara Cardenas", sexo: "F", imagen: "imagenes/user/laura_cardenas.jpg" }
   ],
-
+"02-10": [
+    { nombre: "Jhon Montaño", sexo: "M", imagen: "imágenes/user/" }
+  ],
   "02-20": [
     { nombre: "Julián Castro", sexo: "M", imagen: "imagenes/user/julian.jpg" }
   ],
@@ -75,7 +77,7 @@ export  const birthdays = {
   ],
 
   "06-20": [
-    { nombre: "Juan Pérez", sexo: "M", imagen: "imagenes/user/" },
+    { nombre: "Juan Pérez", sexo: "M", imagen: "imagenes/user/juan_perez.png" },
     { nombre: "Tatiana Arias", sexo: "F", imagen: "imagenes/user/tatiana_arias.jpg" }
   ],
 
