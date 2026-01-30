@@ -1,11 +1,13 @@
 // MM-DD
-export  const birthdays = {
+export const birthdays = {
 
   "01-00": [
-    { nombre: "Jeison Jimenez", sexo: "M", imagen: "imagenes/" },
-    { nombre: "Sandrith", sexo: "F", imagen: "imagenes/user/" }
-  ],
 
+  ],
+  // "01-30": [
+  //   { nombre: "Ruby Colmenares", sexo: "F", imagen: "imagenes/user/ruth_colmemenares.jpg" },
+    
+  // ],
   "01-09": [
     { nombre: "Anyi Maldonado", sexo: "F", imagen: "imagenes/user/" }
   ],
@@ -25,7 +27,7 @@ export  const birthdays = {
   "02-05": [
     { nombre: "Luara Cardenas", sexo: "F", imagen: "imagenes/user/laura_cardenas.jpg" }
   ],
-"02-10": [
+  "02-10": [
     { nombre: "Jhon Montaño", sexo: "M", imagen: "imágenes/user/" }
   ],
   "02-20": [
@@ -35,7 +37,9 @@ export  const birthdays = {
   "02-22": [
     { nombre: "Brenda Ramos", sexo: "F", imagen: "imagenes/user/brenda_ramos.jpg" }
   ],
-
+  "03-01": [
+    { nombre: "Sandrith Ballesteros", sexo: "F", imagen: "imagenes/user/" }
+  ],
   "04-01": [
     { nombre: "Eiduen Contreras", sexo: "M", imagen: "imagenes/user/eiduen_contreras.jpg" }
   ],
@@ -102,7 +106,7 @@ export  const birthdays = {
   ],
 
   "09-05": [
-    { nombre: "Antonella Salazar", sexo: "F", imagen: "imagenes/user/" }
+    { nombre: "Antonella Salazar", sexo: "F", imagen: "imagenes/user/antonella_salazar.jpg" }
   ],
 
   "09-11": [
@@ -115,6 +119,9 @@ export  const birthdays = {
 
   "10-21": [
     { nombre: "Fairon Chávez", sexo: "M", imagen: "imagenes/user/fairon_chavez.jpg" }
+  ],
+  "11-24": [
+    { nombre: "Jeison Jimenez", sexo: "M", imagen: "imagenes/" },
   ],
 
   "11-07": [
@@ -146,7 +153,7 @@ export  const birthdays = {
   ],
 
   "12-31": [
-    { nombre: "Karol Vargas", sexo: "F", imagen: "imagenes/user/" }
+    { nombre: "Karol Vargas", sexo: "F", imagen: "imagenes/user/karol_vargas.jpg" }
   ]
 
 };
