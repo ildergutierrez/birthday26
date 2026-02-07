@@ -4,8 +4,8 @@ export const birthdays = {
   "01-00": [
 
   ],
-  // "01-30": [
-  //   { nombre: "Ruby Colmenares", sexo: "F", imagen: "imagenes/user/ruth_colmemenares.jpg" },
+  // "02-07": [
+  //    { nombre: "Jeison Jimenez", sexo: "M", imagen: "imagenes/user/jeison_jimenez.jpg" },
     
   // ],
   "01-09": [
@@ -121,7 +121,7 @@ export const birthdays = {
     { nombre: "Fairon Chávez", sexo: "M", imagen: "imagenes/user/fairon_chavez.jpg" }
   ],
   "11-24": [
-    { nombre: "Jeison Jimenez", sexo: "M", imagen: "imagenes/" },
+    { nombre: "Jeison Jimenez", sexo: "M", imagen: "imagenes/user/jeison_jimenez.jpg" },
   ],
 
   "11-07": [
