@@ -67,7 +67,9 @@ export const birthdays = {
   "05-01": [
     { nombre: "Wendy Quintero", sexo: "F", imagen: "imagenes/user/wendy_quintero.jpg" }
   ],
-
+"05-07": [
+    { nombre: "Lina M Rivera", sexo: "F", imagen: "imagenes/user" }
+  ],
   "05-21": [
     { nombre: "Deimer Gutierrez", sexo: "M", imagen: "imagenes/user/deimer_gutierrez.jpg" }
   ],
