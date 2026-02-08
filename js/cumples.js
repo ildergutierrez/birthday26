@@ -4,10 +4,15 @@ export const birthdays = {
   "01-00": [
 
   ],
-  // "02-07": [
-  //    { nombre: "Jeison Jimenez", sexo: "M", imagen: "imagenes/user/jeison_jimenez.jpg" },
-    
+// Prubas
+
+  // "02-08": [
+  //    { nombre: "Lina M Rivera", sexo: "F", imagen: "imagenes/user/lina_maria.jpg" },
+  //     { nombre: "Sandrith Ballesteros", sexo: "F", imagen: "imagenes/user/sandrit_ballestero.jpg" }
   // ],
+
+  // Fin de pruebas
+
   "01-09": [
     { nombre: "Anyi Maldonado", sexo: "F", imagen: "imagenes/user/" }
   ],
@@ -38,7 +43,7 @@ export const birthdays = {
     { nombre: "Brenda Ramos", sexo: "F", imagen: "imagenes/user/brenda_ramos.jpg" }
   ],
   "03-01": [
-    { nombre: "Sandrith Ballesteros", sexo: "F", imagen: "imagenes/user/" }
+    { nombre: "Sandrith Ballesteros", sexo: "F", imagen: "imagenes/user/sandrit_ballestero.jpg" }
   ],
   "04-01": [
     { nombre: "Eiduen Contreras", sexo: "M", imagen: "imagenes/user/eiduen_contreras.jpg" }
@@ -68,7 +73,7 @@ export const birthdays = {
     { nombre: "Wendy Quintero", sexo: "F", imagen: "imagenes/user/wendy_quintero.jpg" }
   ],
 "05-07": [
-    { nombre: "Lina M Rivera", sexo: "F", imagen: "imagenes/user" }
+    { nombre: "Lina M Rivera", sexo: "F", imagen: "imagenes/user/lina_maria.jpg" },
   ],
   "05-21": [
     { nombre: "Deimer Gutierrez", sexo: "M", imagen: "imagenes/user/deimer_gutierrez.jpg" }
