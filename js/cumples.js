@@ -6,15 +6,14 @@ export const birthdays = {
   ],
 // Prubas
 
-  // "02-08": [
-  //    { nombre: "Lina M Rivera", sexo: "F", imagen: "imagenes/user/lina_maria.jpg" },
-  //     { nombre: "Sandrith Ballesteros", sexo: "F", imagen: "imagenes/user/sandrit_ballestero.jpg" }
-  // ],
+  "02-14": [
+    { nombre: "Anyi Maldonado", sexo: "F", imagen: "imagenes/user/angie_maldonado.jpg" }
+  ],
 
   // Fin de pruebas
 
   "01-09": [
-    { nombre: "Anyi Maldonado", sexo: "F", imagen: "imagenes/user/" }
+    { nombre: "Anyi Maldonado", sexo: "F", imagen: "imagenes/user/angie_maldonado.jpg" }
   ],
 
   "01-19": [
