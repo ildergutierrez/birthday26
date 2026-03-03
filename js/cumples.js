@@ -6,7 +6,10 @@ export const birthdays = {
   ],
 // Prubas
 
-  //"02-14": [],
+  "03-03": [ { nombre: "Anyi Maldonado", sexo: "F", imagen: "imagenes/user/angie_maldonado.jpg" },
+     { nombre: "Julián Castro", sexo: "M", imagen: "imagenes/user/julian.jpg" }
+  ],
+  
 
   // Fin de pruebas
 
