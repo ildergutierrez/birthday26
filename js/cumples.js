@@ -66,7 +66,7 @@ export const birthdays = {
   ],
 
   "04-21": [
-    { nombre: "Julissa Armesto", sexo: "F", imagen: "imagenes/user/" }
+    { nombre: "Julissa Armesto", sexo: "F", imagen: "imagenes/user/julissa.png" }
   ],
 
   "05-01": [
