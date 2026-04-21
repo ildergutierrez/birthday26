@@ -652,7 +652,7 @@ document.addEventListener("DOMContentLoaded", () => {
     imgElement.onerror = function () {
       console.log("Error cargando imagen, usando fallback");
       this.src =
-        "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23f0f0f0'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial' font-size='80' text-anchor='middle' dy='.3em' fill='%23666'%3E" +
+        "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='250' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23f0f0f0'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial' font-size='80' text-anchor='middle' dy='.3em' fill='%23666'%3E" +
         encodeURIComponent(person.nombre.charAt(0)) +
         "%3C/text%3E%3C/svg%3E";
     };
