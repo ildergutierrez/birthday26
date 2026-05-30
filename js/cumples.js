@@ -78,10 +78,10 @@ export const birthdays = {
   "05-21": [
     { nombre: "Deimer Gutierrez", sexo: "M", imagen: "imagenes/user/deimer_gutierrez.jpg" }
   ],
-
-  "05-30": [
-    { nombre: "Lorena Ramirez", sexo: "F", imagen: "imagenes/user/lorena_ramirez.png" }
+ "05-30": [
+    { nombre: "Katerin Garcia", sexo: "F", imagen: "imagenes/user/k_garcia.jpg" }
   ],
+  
 
   "06-07": [
     { nombre: "Leidy Cardenas", sexo: "F", imagen: "imagenes/user/" }
@@ -104,8 +104,8 @@ export const birthdays = {
     { nombre: "Jhon Alejandro", sexo: "M", imagen: "imagenes/user/" }
   ],
 
-  "07-28": [
-    { nombre: "Katerin Garcia", sexo: "F", imagen: "imagenes/user/" }
+ "07-28": [
+    { nombre: "Lorena Ramirez", sexo: "F", imagen: "imagenes/user/lorena_ramirez.png" }
   ],
 
   "08-26": [
