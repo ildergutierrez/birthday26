@@ -121,7 +121,7 @@ export const birthdays = {
   ],
 
   "10-03": [
-    { nombre: "Daniela Cardenas", sexo: "F", imagen: "imagenes/user/daniela_cardenas.jpg" }
+    { nombre: "Daniela Cardenas", sexo: "F", imagen: "imagenes/user/daniela_cardenas.jpeg" }
   ],
 
   "10-21": [
